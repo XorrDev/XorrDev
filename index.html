@@ -1,286 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="./rreactjsx.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rreactjsx.github.io/" />
-  <meta property="og:title" content="Ethan Quaresma – Tech Nerd And Business Owner" />
-  <meta property="og:description" content="I’m a passionate engineer and business owner building high-performance software and machines." />
-  <meta property="og:image" content="https://rreactjsx.github.io/rreactjsx.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./rreactjsx.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rreactjsx.github.io/" />
+    <meta property="og:title" content="Ethan Quaresma – Tech Nerd And Business Owner" />
+    <meta property="og:description" content="I’m a passionate engineer and business owner building high-performance software and machines." />
+    <meta property="og:image" content="https://rreactjsx.github.io/rreactjsx.png" />
 
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://rreactjsx.github.io/" />
-  <meta name="twitter:title" content="Ethan Quaresma – Tech Nerd And Business Owner" />
-  <meta name="twitter:description" content="I’m a passionate engineer and business owner building high-performance software and machines." />
-  <meta name="twitter:image" content="https://rreactjsx.github.io/rreactjsx.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://rreactjsx.github.io/" />
+    <meta name="twitter:title" content="Ethan Quaresma – Tech Nerd And Business Owner" />
+    <meta name="twitter:description" content="I’m a passionate engineer and business owner building high-performance software and machines." />
+    <meta name="twitter:image" content="https://rreactjsx.github.io/rreactjsx.png" />
 
 
-  <title>Ethan Quaresma</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            background: '#1a1a1a',
-            surface: '#2E2F2D',
-            accent: '#EBFF65',
-            text: '#f0f0f0',
-            faded: '#a1abb6',
-            greenAccent: '#8DA391',
-            overlay: '#231f20',
+    <title>Ethan Quaresma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#1a1a1a',
+              surface: '#2E2F2D',
+              accent: '#EBFF65',
+              text: '#f0f0f0',
+              faded: '#a1abb6',
+              greenAccent: '#8DA391',
+              overlay: '#231f20',
+            }
           }
         }
       }
-    }
-  </script>
-</head>
+    </script>
+  </head>
 
-<body class="bg-background text-text font-mono tracking-tight">
+  <body class="bg-background text-text font-mono tracking-tight">
 
-<!-- Desktop Header (md and up) -->
-<header id="main-header" class="hidden md:flex sticky top-0 z-50 h-40 items-center justify-between border-b-4 border-accent bg-surface transition-all duration-500">
-  <!-- Left Nav -->
-  <nav id="left-nav" class="h-full flex items-center bg-surface px-8 w-1/2 transition-all duration-300">
-    <ul class="flex gap-4 text-white font-bold text-lg">
-      <li><a href="#about" class="hover:text-accent transition">About Me</a></li>
-      |
-      <li><a href="#projects" class="hover:text-accent transition">Projects</a></li>
-    </ul>
-  </nav>
+    <!-- Desktop Header (md and up) -->
+    <header id="main-header" class="hidden md:flex sticky top-0 z-50 h-40 items-center justify-between border-b-4 border-accent bg-surface transition-all duration-500">
+      <!-- Left Nav -->
+      <nav id="left-nav" class="h-full flex items-center bg-surface px-8 w-1/2 transition-all duration-300">
+        <ul class="flex gap-4 text-white font-bold text-lg">
+          <li><a href="#about" class="hover:text-accent transition">About Me</a></li>
+          |
+          <li><a href="#projects" class="hover:text-accent transition">Projects</a></li>
+        </ul>
+      </nav>
 
-  <!-- Center Logo -->
-  <div id="logo-wrapper" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-all duration-500">
-    <div id="logo-bg" class="transition-all duration-500">
-      <img id="logo-img" src="./media/rreactjsx.png" alt="Ethan Quaresma Logo" class="h-20 object-contain transition-all duration-500" />
-    </div>
-  </div>
-
-  <!-- Right Nav -->
-  <nav id="right-nav" class="h-full flex items-center justify-end bg-greenAccent px-8 w-1/2 transition-all duration-300">
-    <ul class="flex gap-4 items-center">
-      <li><a href="https://bsky.app/profile/ethan.secondbyte.co" target="_blank"><img src="./media/socials/Bluesky.png" class="w-8 h-8" alt="Bluesky" /></a></li>
-      <li><a href="https://secondbyte.co" target="_blank"><img src="./media/socials/Secondbyte.png" class="w-8 h-8" alt="Instagram" /></a></li>
-      <li><a href="https://linkedin.com/in/ethan-quaresma" target="_blank"><img src="./media/socials/Linkedin.png" class="w-8 h-8" alt="LinkedIn" /></a></li>
-      <li><a href="https://github.com/rreactjsx" target="_blank"><img src="./media/socials/Github.png" class="w-8 h-8" alt="GitHub" /></a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- Mobile Header (sm only) -->
-<header class="md:hidden sticky top-0 z-50 bg-surface border-b-4 border-accent px-4 py-3">
-  <div class="flex items-center justify-between">
-    <!-- Logo -->
-    <img src="./media/rreactjsx.png" alt="Ethan Quaresma Logo" class="h-10" />
-
-    <!-- Hamburger Menu -->
-    <button id="mobile-menu-toggle" class="text-accent text-3xl focus:outline-none">
-      &#9776;
-    </button>
-  </div>
-
-  <!-- Collapsible Menu -->
-  <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 text-white font-semibold">
-    <a href="#about" class="block w-full px-4 py-2 rounded hover:bg-surface hover:text-accent transition">About Me</a>
-    <a href="#projects" class="block w-full px-4 py-2 rounded hover:bg-surface hover:text-accent transition">Projects</a>
-
-    <!-- Social Icons -->
-    <div class="flex justify-center gap-6 py-4 bg-greenAccent rounded-xl mt-2">
-      <a href="https://bsky.app/profile/ethan.secondbyte.co" target="_blank">
-        <img src="./media/socials/Bluesky.png" class="w-6 h-6" alt="Bluesky" />
-      </a>
-      <a href="https://instagram.com/mstr.ceo" target="_blank">
-        <img src="./media/socials/Secondbyte.png" class="w-6 h-6" alt="Instagram" />
-      </a>
-      <a href="https://linkedin.com/in/ethan-quaresma" target="_blank">
-        <img src="./media/socials/Linkedin.png" class="w-6 h-6" alt="LinkedIn" />
-      </a>
-      <a href="https://github.com/rreactjsx" target="_blank">
-        <img src="./media/socials/Github.png" class="w-6 h-6" alt="GitHub" />
-      </a>
-    </div>
-  </div>
-</header>
-
-
-  
-
-<section id="hero" class="relative flex flex-col justify-center items-center h-[50vh] text-center px-5 py-24 bg-[url('./media/jsx-monogram.svg')] bg-repeat bg-[length:650px] bg-center bg-overlay z-10">
-  <div class="absolute inset-0 bg-overlay/60 z-[-1] pointer-events-none"></div>
-  <h1 class="text-3xl md:text-5xl text-accent tracking-tight font-bold mb-5">Ethan Quaresma</h1>
-  <p class="text-md md:text-2xl text-faded mb-8 tracking-tight">Tech Nerd And Business Owner</p>
-  <a href="#projects" class="text-white border-2 border-accent rounded-full px-6 py-2 text-lg font-extrabold hover:bg-accent hover:text-black transition">View My Work</a>
-</section>
-
-<style>
-  /* Smaller repeating background size on small screens */
-  @media (max-width: 767px) {
-    #hero {
-      background-size: 300px !important;
-    }
-  }
-</style>
-
-
-
-  <!-- About Section -->
-  <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-background">
-    <div class="max-w-6xl mx-auto overflow-hidden">
-  
-      <!-- Who Am I -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-sm sm:text-lg">
-        <div class="text-faded text-left w-full">
-          <h1 class="pt-0 text-3xl md:text-5xl font-extrabold text-accent pb-8 tracking-tight sm:text-3xl">
-            Who Am I
-          </h1>
-          <p class="mb-6">I’m a passionate engineer and business owner building high-performance software and machines. I blend a love for design with sharp logic and business strategy.</p>
-          <p>My goal is to create solutions that are not only powerful and efficient but also elegant and intuitive. I thrive in environments where I can tackle complex challenges and bring innovative ideas to life.</p>
+      <!-- Center Logo -->
+      <div id="logo-wrapper" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-all duration-500">
+        <div id="logo-bg" class="transition-all duration-500">
+          <img id="logo-img" src="./media/rreactjsx.png" alt="Ethan Quaresma Logo" class="h-20 object-contain transition-all duration-500" />
         </div>
-  
-        <!-- Image Grid -->
-        <div class="grid grid-cols-2 grid-rows-2 gap-4 p-2 h-80">
-          <img src="./media/image_1.png" alt="Image 1" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 border-2 border-white col-span-1 row-span-2">
-          <img src="./media/image_2.png" alt="Image 2" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 border-2 border-white col-span-1 row-span-1">
-          <img src="./media/image_3.png" alt="Image 3" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 border-2 border-white col-span-1 row-span-1">
-        </div>
-        
       </div>
-    </div>
-  
-    <!-- Skills & Certifications -->
-    <div class="mt-24">
-      <div class="flex flex-col md:flex-row justify-center gap-8 max-w-6xl mx-auto px-4 sm:px-0">
-  
-        <!-- Languages & Frameworks -->
-        <div class="flex flex-col gap-8 w-full md:w-full">
-  
-          <style>
-            /* White color filter for SVG icons */
-            .icon-white {
-              filter: brightness(0) invert(1);
-            }
-          </style>
-          
-          <!-- Languages -->
-          <div class="bg-surface p-8 rounded-xl w-full transform transition-transform duration-300 border border-greenAccent hover:-translate-y-2 hover:shadow-2xl">
-            <h3 class="text-white/80 uppercase text-xl mb-6 font-bold text-left">Languages</h3>
-            <ul class="text-faded text-left text-sm grid grid-cols-2 gap-x-6 gap-y-3">
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/dotnet" alt="C#" class="w-5 h-5" />
-                C#
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/html5" alt="HTML" class="w-5 h-5" />
-                HTML
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/css" alt="CSS" class="w-5 h-5" />
-                CSS
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/python" alt="Python" class="w-5 h-5" />
-                Python
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" class="w-5 h-5" />
-                JavaScript
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" class="w-5 h-5" />
-                TypeScript
-              </li>
-            </ul>
-          </div>
 
-          <!-- Tools & Frameworks -->
-          <div class="bg-surface p-8 rounded-xl w-full transform transition-transform duration-300 border border-greenAccent hover:-translate-y-2 hover:shadow-2xl">
-            <h3 class="text-white/80 text-xl mb-6 font-bold uppercase text-left">Tools & Frameworks</h3>
-            <ul class="text-faded text-left text-sm grid grid-cols-2 gap-x-6 gap-y-3">
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/svelte" alt="Svelte" class="w-5 h-5" />
-                Svelte / SvelteKit
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/node.js" alt="Node.js" class="w-5 h-5" />
-                Node.js
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" class="w-5 h-5" />
-                PostgreSQL
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind CSS" class="w-5 h-5" />
-                Tailwind CSS
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/stripe" alt="Stripe API" class="w-5 h-5" />
-                Stripe API
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/github" alt="GitHub" class="w-5 h-5" />
-                Git / GitHub
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/digitalocean" alt="DigitalOcean" class="w-5 h-5" />
-                DigitalOcean
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/proxmox" alt="Proxmox" class="w-5 h-5" />
-                Proxmox
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/wordpress" alt="WordPress" class="w-5 h-5" />
-                WordPress + Elementor
-              </li>
-              <li class="flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/docker" alt="Docker" class="w-5 h-5" />
-                Docker
-              </li>
-            </ul>
-          </div>
+      <!-- Right Nav -->
+      <nav id="right-nav" class="h-full flex items-center justify-end bg-greenAccent px-8 w-1/2 transition-all duration-300">
+        <ul class="flex gap-4 items-center">
+          <li><a href="https://bsky.app/profile/ethan.secondbyte.co" target="_blank"><img src="./media/socials/Bluesky.png" class="w-8 h-8" alt="Bluesky" /></a></li>
+          <li><a href="https://secondbyte.co" target="_blank"><img src="./media/socials/Secondbyte.png" class="w-8 h-8" alt="Instagram" /></a></li>
+          <li><a href="https://linkedin.com/in/ethan-quaresma" target="_blank"><img src="./media/socials/Linkedin.png" class="w-8 h-8" alt="LinkedIn" /></a></li>
+          <li><a href="https://github.com/rreactjsx" target="_blank"><img src="./media/socials/Github.png" class="w-8 h-8" alt="GitHub" /></a></li>
+        </ul>
+      </nav>
+    </header>
 
-          
+    <!-- Mobile Header (sm only) -->
+    <header class="md:hidden sticky top-0 z-50 bg-surface border-b-4 border-accent px-4 py-3">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <img src="./media/rreactjsx.png" alt="Ethan Quaresma Logo" class="h-10" />
 
+        <!-- Hamburger Menu -->
+        <button id="hamburger" class="text-accent text-3xl focus:outline-none">
+          &#9776;
+        </button>
+      </div>
+
+      <!-- Collapsible Menu -->
+      <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 text-white font-semibold">
+        <a href="#about" class="block w-full py-2 rounded hover:bg-surface hover:text-accent transition">About Me</a>
+        <a href="#projects" class="block w-full py-2 rounded hover:bg-surface hover:text-accent transition">Projects</a>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center gap-6 py-4 bg-greenAccent rounded-xl mt-2">
+          <a href="https://bsky.app/profile/ethan.secondbyte.co" target="_blank">
+            <img src="./media/socials/Bluesky.png" class="w-6 h-6" alt="Bluesky" />
+          </a>
+          <a href="https://instagram.com/mstr.ceo" target="_blank">
+            <img src="./media/socials/Secondbyte.png" class="w-6 h-6" alt="Instagram" />
+          </a>
+          <a href="https://linkedin.com/in/ethan-quaresma" target="_blank">
+            <img src="./media/socials/Linkedin.png" class="w-6 h-6" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/rreactjsx" target="_blank">
+            <img src="./media/socials/Github.png" class="w-6 h-6" alt="GitHub" />
+          </a>
         </div>
-  
-        <!-- Certifications -->
-        <div class="bg-surface p-8 rounded-xl md:w-[50%] w-full transform transition-transform duration-300 border border-greenAccent hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between items-center">
-          <h3 class="text-white/80 text-xl font-bold text-center uppercase mb-4">Certifications</h3>
-          <div class="flex-grow flex items-center justify-center w-full">
-            <img src="./media/security-plus.png" alt="Security+ Certification" class="w-36 transition-transform duration-300 ease-in-out hover:opacity-90" />
+      </div>
+    </header>
+
+    <section id="hero" class="relative flex flex-col justify-center items-center h-[50vh] text-center px-5 py-24 bg-[url('./media/jsx-monogram.svg')] bg-repeat bg-[length:650px] bg-center bg-overlay z-10">
+      <div class="absolute inset-0 bg-overlay/60 z-[-1] pointer-events-none"></div>
+      <h1 class="text-3xl md:text-5xl text-accent tracking-tight font-bold mb-5">Ethan Quaresma</h1>
+      <p class="text-md md:text-2xl text-faded mb-8 tracking-tight">Tech Nerd And Business Owner</p>
+      <a href="#projects" class="text-white border-2 border-accent rounded-full px-6 py-2 text-lg font-extrabold hover:bg-accent hover:text-black transition">View My Work</a>
+    </section>
+
+    <style>
+      /* Smaller repeating background size on small screens */
+      @media (max-width: 767px) {
+        #hero {
+          background-size: 300px !important;
+        }
+      }
+    </style>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <div class="max-w-6xl mx-auto overflow-hidden">
+    
+        <!-- Who Am I -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-sm sm:text-lg">
+          <div class="text-faded text-left w-full">
+            <h1 class="pt-0 text-3xl md:text-5xl font-extrabold text-accent pb-8 tracking-tight sm:text-3xl">
+              Who Am I
+            </h1>
+            <p class="mb-6">I’m a passionate engineer and business owner building high-performance software and machines. I blend a love for design with sharp logic and business strategy.</p>
+            <p>My goal is to create solutions that are not only powerful and efficient but also elegant and intuitive. I thrive in environments where I can tackle complex challenges and bring innovative ideas to life.</p>
+          </div>
+    
+          <!-- Image Grid -->
+          <div class="grid grid-cols-2 grid-rows-2 gap-4 p-2 h-80">
+            <img src="./media/image_1.png" alt="Image 1" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 border-2 border-white col-span-1 row-span-2">
+            <img src="./media/image_2.png" alt="Image 2" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 border-2 border-white col-span-1 row-span-1">
+            <img src="./media/image_3.png" alt="Image 3" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 border-2 border-white col-span-1 row-span-1">
+          </div>
+          
+        </div>
+      </div>
+    
+      <!-- Skills & Certifications -->
+      <div class="mt-24">
+        <div class="flex flex-col md:flex-row justify-center gap-8 max-w-6xl mx-auto px-4 sm:px-0">
+    
+          <!-- Languages & Frameworks -->
+          <div class="flex flex-col gap-8 w-full md:w-full">
+    
+            <style>
+              /* White color filter for SVG icons */
+              .icon-white {
+                filter: brightness(0) invert(1);
+              }
+            </style>
+            
+            <!-- Languages -->
+            <div class="bg-surface p-8 rounded-xl w-full transform transition-transform duration-300 border border-greenAccent hover:-translate-y-2 hover:shadow-2xl">
+              <h3 class="text-white/80 uppercase text-xl mb-6 font-bold text-left">Languages</h3>
+              <ul class="text-faded text-left text-sm grid grid-cols-2 gap-x-6 gap-y-3">
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/dotnet" alt="C#" class="w-5 h-5" />
+                  C#
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/html5" alt="HTML" class="w-5 h-5" />
+                  HTML
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/css" alt="CSS" class="w-5 h-5" />
+                  CSS
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/python" alt="Python" class="w-5 h-5" />
+                  Python
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" class="w-5 h-5" />
+                  JavaScript
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" class="w-5 h-5" />
+                  TypeScript
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tools & Frameworks -->
+            <div class="bg-surface p-8 rounded-xl w-full transform transition-transform duration-300 border border-greenAccent hover:-translate-y-2 hover:shadow-2xl">
+              <h3 class="text-white/80 text-xl mb-6 font-bold uppercase text-left">Tools & Frameworks</h3>
+              <ul class="text-faded text-left text-sm grid grid-cols-2 gap-x-6 gap-y-3">
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/svelte" alt="Svelte" class="w-5 h-5" />
+                  Svelte / SvelteKit
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/node.js" alt="Node.js" class="w-5 h-5" />
+                  Node.js
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" class="w-5 h-5" />
+                  PostgreSQL
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind CSS" class="w-5 h-5" />
+                  Tailwind CSS
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/stripe" alt="Stripe API" class="w-5 h-5" />
+                  Stripe API
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/github" alt="GitHub" class="w-5 h-5" />
+                  Git / GitHub
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/digitalocean" alt="DigitalOcean" class="w-5 h-5" />
+                  DigitalOcean
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/proxmox" alt="Proxmox" class="w-5 h-5" />
+                  Proxmox
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/wordpress" alt="WordPress" class="w-5 h-5" />
+                  WordPress + Elementor
+                </li>
+                <li class="flex items-center gap-2">
+                  <img src="https://cdn.simpleicons.org/docker" alt="Docker" class="w-5 h-5" />
+                  Docker
+                </li>
+              </ul>
+            </div>
+
+            
+
+          </div>
+    
+          <!-- Certifications -->
+          <div class="bg-surface p-8 rounded-xl md:w-[50%] w-full transform transition-transform duration-300 border border-greenAccent hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between items-center">
+            <h3 class="text-white/80 text-xl font-bold text-center uppercase mb-4">Certifications</h3>
+            <div class="flex-grow flex items-center justify-center w-full">
+              <img src="./media/security-plus.png" alt="Security+ Certification" class="w-36 transition-transform duration-300 ease-in-out hover:opacity-90" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
+    
+    <!-- Projects -->
+    <section id="projects" class="text-center py-24 px-4 sm:px-6 bg-background">
+      <h2 class="text-accent text-3xl mb-12 font-semibold">Projects</h2>
+      <div id="project-grid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
+        <!-- Dynamic Cards-->
+      </div>
+    
+      <button id="show-more-btn" class="mt-12 border-2 border-accent hover:bg-accent hover:text-black text-white px-6 py-3 rounded-full text-lg transition font-extrabold">
+        Show More
+      </button>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="text-center py-24 px-4 sm:px-6 bg-background">
-    <h2 class="text-accent text-3xl mb-12 font-semibold">Projects</h2>
-    <div id="project-grid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
-      <!-- Repeat more cards dynamically here -->
-    </div>
-  
-    <button id="show-more-btn" class="mt-12 border-2 border-accent hover:bg-accent hover:text-black text-white px-6 py-3 rounded-full text-lg transition font-extrabold">
-      Show More
-    </button>
-  </section>
+    <!-- Accomplishments -->
 
-  <!-- Accomplishments -->
+    <!-- Footer -->
+    <footer class="bg-surface text-faded text-xs md:text-lg py-6 text-center">
+      <p>© 2026 Ethan Quaresma. All rights reserved.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="bg-surface text-faded text-xs md:text-lg py-6 text-center">
-    <p>© 2024 Ethan Quaresma. All rights reserved.</p>
-  </footer>
-
-  <script src="scripts.js"></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
 
 <style>

@@ -13,13 +13,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav-menu");
+const navMenu = document.getElementById("mobile-menu");
 
-if (hamburger && navMenu) {
-  hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-  });
-}
+hamburger?.addEventListener("click", () => {
+  navMenu?.classList.toggle("hidden");
+});
+
 
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -103,10 +102,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         displayedRepos += reposPerPage;
 
         // Update button text based on the number of displayed projects
-        if (displayedRepos >= allRepos.length) {
+        if (displayedRepos >= allRepos.length && allRepos.length > 6) {
             showMoreBtn.textContent = "Show Less";
-        } else {
+        } else if(displayedRepos < allRepos.length && allRepos.length > 6) {
             showMoreBtn.textContent = "Show More";
+        } else {
+            showMoreBtn.classList.add("hidden");
         }
     };
 
